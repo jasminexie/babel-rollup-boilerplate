@@ -1,7 +1,7 @@
 {
-  "name": "leadform",
-  "version": "0.7.0",
-  "description": "Generator script for pocoweb leadform",
+  "name": "babel-rollup-boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate for js libraries using babel and rollup",
   "main": "src/index.js",
   "scripts": {
     "test": "exit 0",
@@ -10,11 +10,10 @@
     "build": "rollup -c"
   },
   "keywords": [
-    "form",
-    "leadform",
-    "pocoweb",
-    "leads",
-    "form-generator"
+    "babel",
+    "rollup",
+    "rollup-plugin-babel",
+    "boilerplate"
   ],
   "author": "Jasmine Xie",
   "license": "ISC",
