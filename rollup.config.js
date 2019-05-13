@@ -8,11 +8,11 @@ const extensions = [
   '.js', '.jsx', '.ts', '.tsx',
 ];
 
-
 export default {
   input: 'src/index.js',
   output: {
     file: 'dist/index.js',
+    name: 'lib',
     format: 'umd',
   },
   plugins:
@@ -28,8 +28,8 @@ export default {
        include: 'node_modules/**',
      }),
      replace({
-       'process.env.NODE_ENV': '"production"',
+       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
      }),
-     uglify(),
+     process.env.NODE_ENV !== 'local' && uglify(),
    ],
 };

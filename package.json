@@ -7,7 +7,9 @@
     "test": "exit 0",
     "lint": "eslint .",
     "fix": "eslint . --fix",
-    "build": "rollup -c"
+    "start": "cross-env NODE_ENV=local rollup -c --watch",
+    "dev": "cross-env NODE_ENV=development rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "keywords": [
     "babel",
@@ -21,6 +23,7 @@
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",

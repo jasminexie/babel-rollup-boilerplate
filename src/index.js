@@ -1,3 +1,5 @@
 import { a } from './b';
 
-a();
+export default function lib() {
+  return a();
+}

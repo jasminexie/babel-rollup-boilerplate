@@ -1,1 +1,17 @@
-!function(n){"function"==typeof define&&define.amd?define(n):n()}(function(){"use strict";console.log(123)});
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global.lib = factory());
+}(this, function () { 'use strict';
+
+  var a = function a() {
+    return 'Hello, World!';
+  };
+
+  function lib() {
+    return a();
+  }
+
+  return lib;
+
+}));
